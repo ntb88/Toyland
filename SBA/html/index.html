@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyland!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            background: linear-gradient(to bottom right, #f4f7f1, #e0e0e0);
+            font-family: 'Poppins', sans-serif; /* Default font for the body */
+            color: #F65D34; 
+            margin: 0; 
+            padding: 0; 
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class= "navbar">
+            <h2>Toyland</h2>
+            <nav> 
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="/html/login.html">Login</a></li>
+                    <li><a href="#">About</a></li> 
+                </ul>    
+            </nav>
+        </div>
+        <div class="header-banner">
+            <img class="banner-img" src="/img/bg.png" alt="Toyland Banner" class="banner-img">
+            <div class="banner-text">
+                <h1>Welcome to Toyland</h1>
+                <p>Discover the best toys for all ages</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
+            <section class="filter-section">
+                <div class="search">
+                    <input type="text" placeholder="Enter toy/category">
+                    <button type="button">Search</button>
+                </div>
+                <form id="filter-form">
+                    <label for="toy-category"> <strong>Filter toys by Age:</strong> </label>
+                    <select id="toy-category" name="toy-category">
+                        <option value="all">All</option>
+                        <option value="infant">Infant Toys</option>
+                        <option value="toddler">Toddler Toys</option>
+                        <option value="child">Child Toys</option>
+                        <option value="older-kids">Older Kids Toys</option>
+                    </select>
+                </form>
+            </section>
+            <section class="toy-list">
+                <div class="toy-container">
+                    <article class="toy-card">
+                        <iframe 
+                                src="https://www.youtube.com/embed/0IMyRE_-5mg" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                >
+                        </iframe>
+                        <h3>Rattle Set</h3>
+                        <p>Age Group: Infant</p>
+                    </article>
+                    <article class="toy-card" data-category="toddler">
+                        <img src="https://images.pexels.com/photos/132464/pexels-photo-132464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Toddler Toy">
+                        <h3>Building Blocks</h3>
+                        <p>Age Group: Toddler</p>
+                    </article>
+                    <article class="toy-card" data-category="child">
+                        <img src="https://images.pexels.com/photos/5257437/pexels-photo-5257437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Child Toy">
+                        <h3>Action Figures</h3>
+                        <p>Age Group: Child</p>
+                    </article>
+                    <article class="toy-card">
+                        <iframe src="https://giphy.com/embed/MjOCFaruHVurm" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3>Action Figures</h3>
+                        <p>Age Group: Child</p>
+                    </article>
+                    <article class="toy-card" data-category="older-kids">
+                        <img src="https://plus.unsplash.com/premium_photo-1685045985004-0eaadbfc609d?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Older Kids Toy">
+                        <h3>Remote-Control Car</h3>
+                        <p>Age Group: Older Kids</p>
+                    </article>
+                    <article class="toy-card" data-category="infant">
+                        <img src="https://images.unsplash.com/photo-1584515828432-06198c3196a8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Infant Toy">
+                        <h3>Rattle Set</h3>
+                        <p>Age Group: Infant</p>
+                    </article>
+                    <article class="toy-card" data-category="toddler">
+                        <img src="https://images.unsplash.com/photo-1560961911-ba7ef651a56c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Toddler Toy">
+                        <h3>Building Blocks</h3>
+                        <p>Age Group: Toddler</p>
+                    </article>
+                    <article class="toy-card" data-category="child">
+                        <img src="https://images.unsplash.com/photo-1722498256995-fcc480892dfd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child Toy">
+                        <h3>Action Figures</h3>
+                        <p>Age Group: Child</p>
+                    </article>
+                    <article class="toy-card" data-category="older-kids">
+                        <img src="https://plus.unsplash.com/premium_photo-1702214406894-731633052b4f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Older Kids Toy">
+                        <h3>Remote-Control Car</h3>
+                        <p>Age Group: Older Kids</p>
+                    </article>
+                    <article class="toy-card" data-category="older-kids">
+                        <img src="https://images.unsplash.com/photo-1713817173203-f7a9884e77ce?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Older Kids Toy">
+                        <h3>Remote-Control Car</h3>
+                        <p>Age Group: Older Kids</p>
+                    </article>
+                    <article class="toy-card" data-category="infant">
+                        <img src="https://plus.unsplash.com/premium_photo-1661430916195-f8bfa159d705?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Infant Toy">
+                        <h3>Rattle Set</h3>
+                        <p>Age Group: Infant</p>
+                    </article>
+                    <article class="toy-card" data-category="toddler">
+                        <img src="https://images.unsplash.com/photo-1610213881011-ba006d40d5b4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Toddler Toy">
+                        <h3>Building Blocks</h3>
+                        <p>Age Group: Toddler</p>
+                    </article>
+                </div>
+            </section>
+            
+            <section style ="padding-top:5%">
+                <div class="toy-stats">
+                    <table id="toy-stats-table">
+                        <thead>
+
+                        </thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Categories</th>
+                            <th>Number of Toys in stock</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </section>
+        </div> 
+        
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="footer-container">
+                    <div class="company">
+                        <ul>
+                            <li><strong>Company Info</strong></li>
+                            <li>Careers</li>
+                            <li>Patent</li>
+                            <li>Product Blog</li>
+                        </ul>
+                    </div>
+                    <div class="support">
+                        <ul>
+                            <li><strong>Support</strong></li>
+                            <li>Customer Support</li>
+                            <li>Editorial Guidelines</li>
+                        </ul>
+                    </div>
+                    <div class="legal"> 
+                        <ul>
+                            <li><strong>Legal</strong></li>
+                            <li>Privacy</li>
+                            <li>Terms of Service</li>
+                            <li>Data Preferences</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="social-container">
+                <ul>
+                    <li><a href="#"><img src="/icons/001-instagram.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="/icons/002-facebook.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="/icons/003-twitter.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="/icons/004-youtube.png" alt="" srcset=""></a></li>
+                </ul>
+            </div> 
+        </div>   
+    </footer>
+
+
+     <script src="../js/script.js"></script>
+</body>
+</html>
